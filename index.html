@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dual Audio Track Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dual Audio Track Video Player</h1>
+    <!-- Video Element -->
+    <video
+      width="300"
+      height="300"
+      id="videoPlayer"
+      src="/assest/video (1).mp4"
+      muted
+      controls
+    ></video>
+
+    <!-- Audio Tracks -->
+    <audio id="englishAudio" src="/assest/english_audio.mp3"></audio>
+    <audio id="spanishAudio" src="/assest/spanish_audio.wav"></audio>
+
+    <!-- Language Toggle Buttons -->
+    <div>
+      <button id="englishButton" onclick="switchLanguage('english')">
+        Play English Audio
+      </button>
+      <button id="spanishButton" onclick="switchLanguage('hindi')">
+        Play Hindi Audio
+      </button>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
